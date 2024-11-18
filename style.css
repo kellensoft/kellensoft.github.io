@@ -1,0 +1,31 @@
+#page {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.ant{
+    position: absolute;
+    height: 1vh;
+    width: 0.3vh;
+}
+
+.head, .thorax, .abdomen {
+    border-radius: 50%;
+    background-color: black;
+    height: 33%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

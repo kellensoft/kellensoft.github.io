@@ -1,3 +1,3 @@
 # KellenSoft
 
-Don't mind the bugs.
+Think Different and Mind the Bugs.

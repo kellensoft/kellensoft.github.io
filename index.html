@@ -9,19 +9,90 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="page" class="is-flex is-flex-direction-column min-vh-100">
-    <header class="section">
-      <h1 class="title">KellenSoft</h1>
-    </header>
-    <main class="section is-flex-grow-1">
-      <p class="subtitle">Don't Mind the Bugs</p>
-    </main>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>&copy; 2024 KellenSoft</p>
+  <section id="page" class="hero is-info is-fullheight">
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="assets/ks.svg" alt="Logo" />
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a id="cardOpener" class="navbar-item is-active"> Cards </a>
+              <a href="https://github.com/kellensoft?tab=repositories" class="navbar-item"> Repositories </a>
+              <span class="navbar-item">
+                <a href="https://github.com/kellensoft/kellensoft.github.io/archive/refs/heads/main.zip" target="_blank" class="button is-danger">
+                  <span class="icon">
+                    <i class="fab fa-github"><img src="assets/gh.svg" alt="GitHub" width="16" height="16" style="filter: invert(1);"/></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="modal" id="cardModal">
+      <div class="modal-background"></div>
+      <div class="modal-card card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="https://bulma.io/assets/images/placeholders/1280x960.png"
+              alt="Placeholder image"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img
+                  src="https://bulma.io/assets/images/placeholders/96x96.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">John Smith</p>
+              <p class="subtitle is-6">@johnsmith</p>
+            </div>
+          </div>
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+            iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">KellenSoft</p>
+        <p class="subtitle">Don't Mind the Bugs</p>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>&copy; 2024 KellenSoft</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
   <script src="script.js" defer></script>
 </body>
 </html>

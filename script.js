@@ -1,3 +1,32 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarBurger = document.querySelector('.navbar-burger');
+    const navbarMenu = document.querySelector('#navbarMenuHeroC');
+
+    if (navbarBurger && navbarMenu) {
+      navbarBurger.addEventListener('click', () => {
+        // Toggle the is-active class on both the burger and the menu
+        navbarBurger.classList.toggle('is-active');
+        navbarMenu.classList.toggle('is-active');
+      });
+    }
+
+    const openModalButton = document.getElementById('cardOpener');
+    const modal = document.getElementById('cardModal');
+    const closeModalButtons = modal.querySelectorAll('.modal-background');
+
+    // Open the modal
+    openModalButton.addEventListener('click', () => {
+      modal.classList.add('is-active');
+    });
+
+    // Close the modal when any close button or background is clicked
+    closeModalButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        modal.classList.remove('is-active');
+      });
+    });
+  });
+
 class Ant {
     constructor() {
         console.log(total);
